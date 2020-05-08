@@ -75,6 +75,9 @@ else
     tar vfx hashdeep.tar
 fi
 
+#
+# Notes below to move to automated install
+# 
 
 ### sudo apt install autoconf 
 ### sudo apt install cmake
@@ -84,6 +87,9 @@ fi
 ## cmake .
 ## make
 ## sudo make install
+# Installing: /usr/local/share/man/man1/nsrllookup.1
+# Installing: /usr/local/bin/nsrllookup
+
 
 # in nsrlserver
 ## cmake -DPYTHON_EXECUTABLE=`which python3` .
@@ -106,9 +112,26 @@ fi
 # make
 # make install
 ## installs:
-#   /usr/local/bin/hashdeep'
-#   /usr/local/bin/md5deep'
-#   /usr/local/bin/sha1deep'
-#   /usr/local/bin/sha256deep'
-#   /usr/local/bin/whirlpooldeep'
-# installs file '/usr/local/bin/tigerdeep': Permission denied
+#   /usr/local/bin/hashdeep
+#   /usr/local/bin/md5deep
+#   /usr/local/bin/sha1deep
+#   /usr/local/bin/sha256deep
+#   /usr/local/bin/whirlpooldeep
+#   /usr/local/bin/tigerdeep
+
+
+# unzip unzip rds_modernm.zip
+
+
+# nsrlupdate /path/to/NSRLFile.txt
+# nsrlupdate /home/user/hashdb/file
+
+(takes a while.... 2-4 min?)
+# writes for some reason to '/usr/local/share/nsrlsvr'
+
+#nsrlsrv takes at least 5 Minuts to actually start up
+
+#sudo nsrlsvr
+#wait 5 minutes
+#md5deep -r . > all_hash.txt
+#nsrllookup -s 127.0.0.1 < all_hash.txt > rds_miss.txt
