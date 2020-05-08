@@ -35,7 +35,7 @@ echo ""
 echo "Download all the things!"
 echo ""
 FILE=rds_modernm.zip
-if [ -f rds_modernm.zip ]; then
+if [ -f $FILE.zip ]; then
     echo "The Database is already downloaded"
 else
     echo "Download the Database (> 1.x GB)"
@@ -43,10 +43,35 @@ else
 fi
 
 echo ""
-FILE=rds_modernm.zip
-if [ -f rds_modernm.zip ]; then
-    echo "The Database is already downloaded"
+FILE=nsrllookup.tgz
+if [ -f $FILE ]; then
+    echo "The nsrllookup codebase is already downloaded"
 else
-    echo "Download the Database (> 1.x GB)"
-    wget https://s3.amazonaws.com/rds.nsrl.nist.gov/RDS/current/rds_modernm.zip
+    echo "Download the nsrllookup codebase"
+    wget https://github.com/rjhansen/nsrllookup/tarball/gh-pages -O nsrllookup.tgz
+    gunzip nsrllookup.tgz
+    tar vfx nsrllookup.tgz
 fi
+
+echo ""
+FILE=nsrlsvr.tgz
+if [ -f $FILE ]; then
+    echo "The nsrlsvr codebase is already downloaded"
+else
+    echo "Download the nsrlsvr codebase"
+    wget https://github.com/rjhansen/nsrlsvr/tarball/master -O nsrlsvr.tgz
+    gunzip nsrlsvr.tgz
+    tar vfx nsrlsvr.tgz
+fi
+
+echo ""
+FILE=nsrlsvr.tgz
+if [ -f $FILE ]; then
+    echo "The hashdeep codebase is already downloaded"
+else
+    echo "Download the hashdeep codebase"
+    wget https://github.com/jessek/hashdeep/tarball/master -O hashdeep.tgz
+    gunzip hashdeep.tgz
+    tar vfx hashdeep.tgz
+fi
+
