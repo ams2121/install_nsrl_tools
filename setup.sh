@@ -35,7 +35,7 @@ echo ""
 echo "Download all the things!"
 echo ""
 FILE=rds_modernm.zip
-if [ -f $FILE.zip ]; then
+if [ -f $FILE ]; then
     echo "The Database is already downloaded"
 else
     echo "Download the Database (> 1.x GB)"
