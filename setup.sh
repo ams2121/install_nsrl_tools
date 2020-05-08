@@ -18,7 +18,7 @@
 #
 # nsrllookup - a tool by Robert J. Hansen to look up hashes against an NSRL RDS server
 #     Link:     https://github.com/rjhansen/nsrllookup
-#     Latest:   https://github.com/rjhansen/nsrllookup/tarball/gh-pages
+#     Latest:   https://github.com/rjhansen/nsrllookup/tarball/master
 #
 # nsrlsvr -  a tool by Robert J. Hansen that runs an NSRL RDS server using the minimal RDS data set
 #     Link:     https://github.com/rjhansen/nsrlsvr
@@ -48,7 +48,7 @@ if [ -f $FILE ]; then
     echo "The nsrllookup codebase is already downloaded"
 else
     echo "Download the nsrllookup codebase"
-    wget https://github.com/rjhansen/nsrllookup/tarball/gh-pages -O nsrllookup.tgz
+    wget https://github.com/rjhansen/nsrllookup/tarball/master -O nsrllookup.tgz
     gunzip nsrllookup.tgz
     tar vfx nsrllookup.tar
 fi
@@ -91,6 +91,10 @@ fi
 ## sudo make install
 # unzip and find NSRLFile.txt in the big unzipped nsrl data set
 ## nsrlupdate /path/to/NSRLFile.txt
+# Installing: /usr/local/bin/nsrlsvr
+# Installing: /usr/local/bin/nsrlupdate
+# Installing: /usr/local/share/man/man1/nsrlsvr.1
+# Installing: /usr/local/share/man/man1/nsrlupdate.1
 
 
 # in hash deep 
