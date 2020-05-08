@@ -76,6 +76,34 @@ else
 fi
 
 
+### sudo apt install autoconf 
+### sudo apt install cmake
+
+#in nsrllookup
+## cmake .
+## make
+## sudo make install
+
+# in nsrlserver
+## cmake -DPYTHON_EXECUTABLE=`which python3` .
+## make
+## sudo make install
+# unzip and find NSRLFile.txt in the big unzipped nsrl data set
+## nsrlupdate /path/to/NSRLFile.txt
+
+
 # in hash deep 
 # make sure tools are installed
 ### sudo apt install autoconf 
+
+# sh bootstrap.sh # runs autoconf, automake
+# ./configure
+# make
+# make install
+## installs:
+#   /usr/local/bin/hashdeep'
+#   /usr/local/bin/md5deep'
+#   /usr/local/bin/sha1deep'
+#   /usr/local/bin/sha256deep'
+#   /usr/local/bin/whirlpooldeep'
+# installs file '/usr/local/bin/tigerdeep': Permission denied
