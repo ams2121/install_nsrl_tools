@@ -50,7 +50,7 @@ else
     echo "Download the nsrllookup codebase"
     wget https://github.com/rjhansen/nsrllookup/tarball/gh-pages -O nsrllookup.tgz
     gunzip nsrllookup.tgz
-    tar vfx nsrllookup.tgz
+    tar vfx nsrllookup.tar
 fi
 
 echo ""
@@ -61,7 +61,7 @@ else
     echo "Download the nsrlsvr codebase"
     wget https://github.com/rjhansen/nsrlsvr/tarball/master -O nsrlsvr.tgz
     gunzip nsrlsvr.tgz
-    tar vfx nsrlsvr.tgz
+    tar vfx nsrlsvr.tar
 fi
 
 echo ""
@@ -72,6 +72,6 @@ else
     echo "Download the hashdeep codebase"
     wget https://github.com/jessek/hashdeep/tarball/master -O hashdeep.tgz
     gunzip hashdeep.tgz
-    tar vfx hashdeep.tgz
+    tar vfx hashdeep.tar
 fi
 
