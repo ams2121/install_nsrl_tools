@@ -75,3 +75,7 @@ else
     tar vfx hashdeep.tar
 fi
 
+
+# in hash deep 
+# make sure tools are installed
+### sudo apt install autoconf 
