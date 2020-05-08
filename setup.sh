@@ -65,7 +65,7 @@ else
 fi
 
 echo ""
-FILE=nsrlsvr.tgz
+FILE=hashdeep.tgz
 if [ -f $FILE ]; then
     echo "The hashdeep codebase is already downloaded"
 else
