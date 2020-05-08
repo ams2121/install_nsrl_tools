@@ -78,6 +78,7 @@ fi
 
 ### sudo apt install autoconf 
 ### sudo apt install cmake
+### sudo apt-get install libboost-all-dev
 
 #in nsrllookup
 ## cmake .
